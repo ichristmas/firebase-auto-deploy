@@ -16,4 +16,4 @@ jobs:
     - name: deploy
       run: |
         sudo npm i -g firebase-tools
-        cd system && firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
